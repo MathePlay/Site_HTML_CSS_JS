@@ -20,7 +20,9 @@ body{
 
 nav {
     color: rgb(187,187,187);
-    font-size: 12px;
+    font-size: 14px;
+    float: right;
+    margin-top: 50px
 }
 
 nav a {
@@ -33,4 +35,5 @@ nav a {
     color: white;
     padding: 12px 40px;
     border-radius: 3px;
+    margin-left: 25px;
 }
