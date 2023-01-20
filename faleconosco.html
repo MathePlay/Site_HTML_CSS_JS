@@ -3,6 +3,7 @@
     <head>
         <title>Fale conosco</title>
         <link rel="stylesheet" type="text/css" href="CSS/style.css"/>
+        <meta charset="utf-8"/>
     </head>
     <body>
         
@@ -23,7 +24,7 @@
                 />
                 <nav>
                     <a alt="Vai para a página inicial do site" href="index.html">Página Principal</a> | 
-                    <a alt="Vai para a lista de marcas que trabalhamos" href="#marcas">Marcas</a> |  
+                    <a alt="Vai para a lista de marcas que trabalhamos" href="index.html#marcas">Marcas</a> |  
                     <a title="Vai para a página de fale conosco" href="faleconosco.html">Fale Conosco</a> 
                     <a class="btn_destaque" title="Vai para a página de onde estamos" href="ondeestamos.html">Onde estamos</a>
                 </nav>
@@ -31,38 +32,38 @@
         </header>
         <br />
         <section class="sec_fale_onde">
-            <div class="metade">
-                <!--
-                    Metodo:
-                    - GET: Dados são passados pela URL.
-                    - POST: Dados são passados pela Requisição.
-                -->
-                <form enctype="application/x-www-form-urlencoded" method="POST">
+            <div class="container">
+                <div class="metade">
+                    <!--
+                        Metodo:
+                        - GET: Dados são passados pela URL.
+                        - POST: Dados são passados pela Requisição.
+                    -->
+                    <form enctype="application/x-www-form-urlencoded" method="POST">
 
-                    <label for="NomeCompleto">Nome</label>
-                    <input id="NomeCompleto" type="text" name="Nome_Completo" placeholder="Digite seu nome completo"/>
-                    <br />
+                        <label for="NomeCompleto">Nome</label>
+                        <input id="NomeCompleto" type="text" name="Nome_Completo" placeholder="Digite seu nome completo"/>
+                        <br />
 
-                    <label for="Email">Email</label>
-                    <input id="Email" type="text" name="Email" placeholder="Digite seu email"/>
-                    <br />
+                        <label for="Email">Email</label>
+                        <input id="Email" type="text" name="Email" placeholder="Digite seu email"/>
+                        <br />
 
-                    <label for="Telefone">Telefone</label>
-                    <input id="Telefone" type="text" name="Telefone" placeholder="Digite seu telefone"/>
-                    <br />
+                        <label for="Telefone">Telefone</label>
+                        <input id="Telefone" type="text" name="Telefone" placeholder="Digite seu telefone"/>
+                        <br />
 
-                    <label for="Telefone">Mensagem</label>
-                    <textarea name="Mensagem"></textarea>
-                    <br />
+                        <label for="Telefone">Mensagem</label>
+                        <textarea name="Mensagem"></textarea>
+                        <br />
 
-                    <input type="submit" value="Ok"/>
-                </form>
+                        <input type="submit" value="Enviar"/>
+                    </form>
+                </div>
             </div>
 
             <div class="metade">
                 <div>
-                    <b>Telefóne:</b> <a href="tel:6133333333">(61) 3333-3333.</a>
-                    <br />
                     <b>Redes Sociais:</b>
                     <br />
                     <a href="#">
@@ -76,8 +77,10 @@
                     <a href="#">
                         <img alt="Link para facebook" src="img/instagram.png"/> 
                     </a>
+                    <br />
+                    <br />
+                    <b>Telefóne:</b> <a href="tel:6133333333">(61) 3333-3333.</a>
                 </div>
-                <br />
                 <br />
                 <address>
                     Brasil, DF
@@ -90,7 +93,6 @@
                     <br />
                     Centro
                 </address>
-                Informações de contato
             </div>
         </section>
         
@@ -128,7 +130,7 @@
                         <h3>Links</h3>
 
                         <a alt="Vai para a página inicial do site" href="index.html">Início</a> <br>
-                        <a alt="Vai para a lista de marcas que trabalhamos" href="#marcas">Marcas</a> <br>
+                        <a alt="Vai para a lista de marcas que trabalhamos" href="index.html#marcas">Marcas</a> <br>
                         <a title="Vai para a página de fale conosco" href="faleconosco.html">Fale Conosco</a> <br>
                         <a title="Vai para a página de onde estamos" href="ondeestamos.html">Onde estamos</a><br>
                     </div>

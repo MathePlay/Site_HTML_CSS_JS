@@ -40,7 +40,8 @@ nav .btn_destaque{
     margin-left: 25px;
 }
 
-.btn_destaque {
+.btn_destaque, .metade input[type = submit]{
+    border: none;
     background-color: rgb(255,77,77);
     color: white;
     padding: 12px 40px;
@@ -152,34 +153,53 @@ nav .btn_destaque{
 }
 
 .sec_fale_onde{
-    height: 500px;
+    height: 400px;
     background-color: #FAFAFA;
 }
 
 .metade{
-    margin-top: 15px;
     width: 50%;
     float: left;
     line-height: 150%;
-    padding-top: 100px;
+    padding-top: 50px;
+    color: rgb(120,120,120)
 }
 
 .metade form{
     line-height: 250%;
 }
 
-.metade form input{
+.metade form input[type =text], textarea{
     border: none;
     border-bottom: 1px solid lightgray;
+    width: 60%;
+    background-color: #FAFAFA;
+    padding: 10px;
+    color: rgb(120,120,120);
+}
+
+.metade textarea{
+    min-height: 100px;
+}
+
+.metade input[type = submit]{
+    float: right;
+    margin-right: 90px
 }
 
 .metade a{
     text-decoration: none;
+    color: rgb(180,180,180);
 }
 
 .metade img{
     width: 35px;
 }
+
+.metade div, .metade address{
+    padding-left: 35px;
+}
+
 
 .metade label{
     width: 25%;
