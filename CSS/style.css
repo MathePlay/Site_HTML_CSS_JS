@@ -28,6 +28,7 @@ nav {
 nav a {
     color: rgb(187,187,187);
     text-decoration: none;
+    margin-right: 25px
 }
 
 .btn_destaque {
@@ -35,5 +36,36 @@ nav a {
     color: white;
     padding: 12px 40px;
     border-radius: 3px;
-    margin-left: 25px;
+    font-size: 14px;
+    text-decoration: none;
 }
+
+.sec01{
+    height: 600px;
+    color: white;
+    background-image: url(/img/atendente.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 90%;
+}
+
+.sec01 .titulo{
+    text-decoration: bold;
+    position: relative;
+    height: 140px;
+    text-shadow: 0.1em 0.1em 0.2em black;
+    font-size: 40px;
+    padding-top: 100px;
+}
+
+.sec01 p1{
+    text-shadow: 0.1em 0.1em 0.2em black;
+    font-size: 50px;
+}
+
+.sec01 p{
+    text-shadow: 0.1em 0.1em 0.2em black;
+    font-size: 30px;
+    padding-bottom: 60px
+}
+
