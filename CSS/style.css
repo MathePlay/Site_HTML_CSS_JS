@@ -1,3 +1,7 @@
+.clearfix {
+  clear: both;
+}
+
 body{
     margin: 0;
     font-family: sans-serif
@@ -29,7 +33,10 @@ nav {
 nav a {
     color: rgb(187,187,187);
     text-decoration: none;
-    margin-right: 25px
+}
+
+nav .btn_destaque{
+    margin-left: 25px;
 }
 
 .btn_destaque {
@@ -47,7 +54,7 @@ nav a {
     background-image: url(/img/atendente.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 90%;
+    background-size: 80%;
 }
 
 .sec01 .titulo{
@@ -67,7 +74,7 @@ nav a {
 .sec01 p{
     text-shadow: 0.1em 0.1em 0.2em black;
     font-size: 30px;
-    padding-bottom: 60px
+    padding-bottom: 60px;
 }
 
 .sec02{
@@ -76,13 +83,75 @@ nav a {
 
 .sec02 p{
     text-align: center;
-    font-size: 28px
+    font-size: 28px;
 }
 
 .sec02 img {
     width: 100%;
     margin-bottom: 40px;
 }
+
+.sec03{
+    height: 600px;
+    text-align: right;
+    background-image: url(/img/produtos.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80%;
+}
+
+.sec03 p{
+    text-shadow: 0.1em 0.1em 0.2em black;
+    font-size: 30px;
+    padding-top: 130px;
+    padding-bottom: 20px;
+    font-size: 54px;
+    line-height: 120%;
+    color: white;
+}
+
+
+.direitos_reservados{
+    background-color: rgb(255,77,77);
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    padding-top: 10px;
+    padding-bottom: 10px;  
+}
+
+.direitos_reservados a {
+    color: white;
+    text-decoration: none;
+}
+
+.um_terco{
+    padding-top: 20px;
+    float: left;
+    width: 33%;
+    color: rgb(136,136,136);
+    padding-bottom: 20px;
+}
+
+.um_terco, .um_terco a{
+    text-decoration: none;
+    color: rgb(136,136,136);
+}
+
+.um_terco .logo{
+    width: 90%
+}
+
+.um_terco img{
+    width: 10%;
+}
+
+.margem_esquerda{
+    margin-left: 30px;
+}
+
+
+
 
 
 
