@@ -9,6 +9,7 @@ body{
     padding-top: 10px;
     padding-bottom: 10px;
     font-size: 14px;
+    margin-bottom: 10px;
 }
 
 
@@ -68,4 +69,29 @@ nav a {
     font-size: 30px;
     padding-bottom: 60px
 }
+
+.sec02{
+    border-bottom: 1px solid rgb(204,204,204);
+}
+
+.sec02 p{
+    text-align: center;
+    font-size: 28px
+}
+
+.sec02 img {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
 
