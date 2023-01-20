@@ -151,6 +151,44 @@ nav .btn_destaque{
     margin-left: 30px;
 }
 
+.sec_fale_onde{
+    height: 500px;
+    background-color: #FAFAFA;
+}
+
+.metade{
+    margin-top: 15px;
+    width: 50%;
+    float: left;
+    line-height: 150%;
+    padding-top: 100px;
+}
+
+.metade form{
+    line-height: 250%;
+}
+
+.metade form input{
+    border: none;
+    border-bottom: 1px solid lightgray;
+}
+
+.metade a{
+    text-decoration: none;
+}
+
+.metade img{
+    width: 35px;
+}
+
+.metade label{
+    width: 25%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+
 @media screen and (max-width: 560px){
     .barra_superior .container{
         margin-left: 10px
