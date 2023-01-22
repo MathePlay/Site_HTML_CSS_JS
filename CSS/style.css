@@ -169,7 +169,7 @@ nav .btn_destaque{
     line-height: 250%;
 }
 
-.metade form input[type =text], textarea{
+.metade form input[type =text], textarea,.modal input[type = text]{
     border: none;
     border-bottom: 1px solid lightgray;
     width: 60%;
@@ -250,9 +250,29 @@ nav .btn_destaque{
     }
 }
 
+.modal{
+    display: none;
+    position: fixed;
+    width: 400px;
+    height: 200px;
+    background-color: white;
+    top: 50%;
+    margin-top: -100px;
+    left: 50%;
+    margin-left: -200px;
+    padding: 20px;
+}
 
+.modal input[type = text]{
+    width: 95%;
+}
 
-
+.modal a{
+    float: right;
+    font-size: 24px;
+    text-decoration: none;
+    color: rgb(180,180,180)
+}
 
 
 
