@@ -61,7 +61,6 @@ nav .btn_destaque{
 
 .sec01 .titulo{
     text-decoration: bold;
-    position: relative;
     height: 140px;
     text-shadow: 0.1em 0.1em 0.2em black;
     font-size: 40px;
@@ -261,6 +260,7 @@ nav .btn_destaque{
     left: 50%;
     margin-left: -200px;
     padding: 20px;
+    border-radius: 4px;
 }
 
 .modal input[type = text]{
@@ -271,7 +271,8 @@ nav .btn_destaque{
     float: right;
     font-size: 24px;
     text-decoration: none;
-    color: rgb(180,180,180)
+    color: rgb(180,180,180);
+    cursor: pointer;
 }
 
 
