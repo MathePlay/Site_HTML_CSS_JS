@@ -253,7 +253,7 @@ nav .btn_destaque{
     display: none;
     position: fixed;
     width: 400px;
-    height: 200px;
+    min-height: 200px;
     background-color: white;
     top: 50%;
     margin-top: -100px;
@@ -273,6 +273,15 @@ nav .btn_destaque{
     text-decoration: none;
     color: rgb(180,180,180);
     cursor: pointer;
+}
+
+span.nao_valido{
+    color: red;
+    display: none;
+}
+
+input.nao_valido{
+    border-bottom: 1px solid red !important;
 }
 
 
