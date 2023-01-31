@@ -1,3 +1,4 @@
+/* Apressentação Modal*/
 setTimeout(ApresentarModal, 5000);
 function ApresentarModal(){
     var modal = document .querySelector(".modal");
@@ -14,6 +15,7 @@ function ApresentarModal(){
     }
 }
 
+/* Validação Moda Pagina Principal */
 if (document.forms["modal_form"] != undefined){
     // Validação
     var form = document.forms["modal_form"];
@@ -34,16 +36,101 @@ function validarFormModal (evt){
     
     var posicaoArroba = valorEmail.indexOf("@");
     
+    if( !ValidarEmail(valorEmail)){
+        inputEmail.className = "nao_valido"
+        document.querySelector("span.nao_valido").style.display = "block"
+        evt.preventDefault();
+    }
+}
+
+/* Validação Fale Conosco */
+if (document.forms["form_contato"] != undefined){
+    var form = document.forms["form_contato"];
+    
+    form.addEventListener("submit", function(evt){
+        
+        var formValido = true;
+        
+        if(!NaoVazio(form.Nome_Completo.value)){
+            form.Nome_Completo.className = "nao_valido";
+            formValido = false;
+        }
+        
+        if(!NaoVazio(form.Telefone.value)){
+            form.Telefone.className = "nao_valido";
+            formValido = false;
+        }
+        
+        if(!NaoVazio(form.Mensagem.value)){
+            form.Mensagem.className = "nao_valido";
+            formValido = false;
+        }
+        
+        if(!ValidarEmail(form.Email.value)){
+            form.Email.className = "nao_valido";
+            formValido = false;
+        }
+        
+        
+        if (!formValido){
+            evt.preventDefault();
+        }
+    
+    });
+    
+    var inputs = document.querySelectorAll("form[name=form_contato] input[type=text]");
+    
+    for(var i = 0; i < inputs.length; i++){
+        
+        inputs[i].addEventListener("keypress", function(){
+           this.className = ""; 
+        });
+    }
+    
+    var textarea = document.querySelector("form[name=form_contato] textarea");
+    
+        textarea.addEventListener("keyup", function(){
+           this.className = ""; 
+            document.querySelector(".texto").innerHTML = "Caracter: " + this.value.length;
+        });
+}
+    
+
+
+
+
+/* Funções */
+
+function ValidarEmail(valorEmail){
     if(
         valorEmail != "" &&
         valorEmail.indexOf("@") > 3 &&
         valorEmail.lastIndexOf(".") > posicaoArroba
     ){
-        
+        return true;
     }else{
-        inputEmail.className = "nao_valido"
-        
-        document.querySelector("span.nao_valido").style.display = "block"
-        evt.preventDefault();
+        return false;
     }
 }
+
+function NaoVazio (texto){
+    if(texto.trim().length > 0){
+        return true;
+    }else{
+        return false;
+    }
+}
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    

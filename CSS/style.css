@@ -1,10 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
 .clearfix {
   clear: both;
+}
+textarea, input{
+    font-family: "Raleway";
 }
 
 body{
     margin: 0;
-    font-family: sans-serif
+    font-family: "Raleway";
 }
 
 .barra_superior {
@@ -175,6 +180,8 @@ nav .btn_destaque{
     background-color: #FAFAFA;
     padding: 10px;
     color: rgb(120,120,120);
+    box-shadow: 0;
+    outline: 0;
 }
 
 .metade textarea{
@@ -280,11 +287,17 @@ span.nao_valido{
     display: none;
 }
 
-input.nao_valido{
+input.nao_valido, textarea.nao_valido{
     border-bottom: 1px solid red !important;
 }
 
-
+.texto{
+    color: gray;
+    float: right;
+    font-size: 12px;
+    margin-right: 50px;
+    line-height: 1px;
+}
 
 
 
